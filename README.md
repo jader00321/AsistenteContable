@@ -92,7 +92,9 @@ Para probar el asistente en tu entorno local, sigue estos pasos:
     ```bash
     python main_app.py
     
-📈 Próximos Pasos (Roadmap)
+
+### 📈 Próximos Pasos (Roadmap)
+
 [ ] Implementación de OCR para lectura de facturas en formato imagen/PDF.
 
 [ ] Rediseño de la interfaz de usuario con estilos modernos y animaciones.
@@ -101,15 +103,7 @@ Para probar el asistente en tu entorno local, sigue estos pasos:
 
 [ ] Dashboard estadístico de gastos acumulados.
 
+---
+
 Proyecto desarrollado con el objetivo de optimizar la eficiencia contable mediante tecnología.
 
-
-Para ayudarte a visualizar cómo funciona el "cerebro" detrás de tu asistente (la lógica que une Playwright con la clasificación), he preparado este simulador interactivo. Te servirá para explicarle a otros cómo tu código transforma una factura desordenada en datos útiles para un contador.
-
-{
-  "component": "LlmGeneratedComponent",
-  "props": {
-    "height": "600px",
-    "prompt": "Crea un simulador interactivo del flujo de trabajo de un asistente contable automático. El objetivo es que el usuario vea el proceso de 'Scraping -> Clasificación -> Excel'. \n\n1. Entradas: Un selector de 'Tipo de Comprobante' (Factura, Boleta, Nota de Crédito) y un control para 'Simular Carga de Datos'. \n2. Visualización: Un área que simule la pantalla de un navegador (Web Scraping) donde aparezcan datos de SUNAT, luego una zona de 'Procesamiento' donde el código clasifica la información (usando lógica similar a classifier.py) y finalmente una vista previa de una hoja de Excel llenándose automáticamente. \n3. Comportamiento: Al presionar 'Procesar', debe mostrarse una animación paso a paso del flujo. En cada etapa, mostrar qué archivo del proyecto (automation_engine.py, classifier.py, data_handler.py) está trabajando. \n4. Idioma: Español. \n5. Sin split horizontal, todo fluido de arriba hacia abajo."
-  }
-}
