@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Consulta Simulada</title>
+</head>
+<body>
+    <h1>Formulario de Consulta Simulado</h1>
+    <form id="consult-form">
+        RUC: <input type="text" id="ruc"><br>
+        Serie: <input type="text" id="serie"><br>
+        Número: <input type="text" id="numero"><br>
+        <button type="button" onclick="showResult()">Consultar</button>
+    </form>
+
+    <hr>
+    <div id="result-container" style="display:none;">
+        <h2>Resultado de la Consulta</h2>
+        <div id="invoice-description">
+            </div>
+    </div>
+
+    <script>
+        function showResult() {
+            const ruc = document.getElementById('ruc').value;
+            const numero = document.getElementById('numero').value;
+            const descriptionDiv = document.getElementById('invoice-description');
+            let description = '';
+
+            // Lógica simple para devolver diferentes descripciones
+            if (ruc === '20100055555' && numero === '1234') {
+                description = 'Por consumo de combustible en Estación de Servicio Primax.';
+            } else if (ruc === '20455566666' && numero === '567') {
+                description = 'Compra de utiles de oficina y papeleria.';
+            } else {
+                description = 'Servicios de asesoria y consultoria general.';
+            }
+            
+            descriptionDiv.innerText = description;
+            document.getElementById('result-container').style.display = 'block';
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+# ==========================================
+# 1. VARIABLES DE ENTORNO Y SEGURIDAD (¡CRÍTICO!)
+# ==========================================
+.env
+.env.local
+.env.development
+*.pem
+*.key
+
+# ==========================================
+# 2. CARPETAS DE IDEs Y EDITORES
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# 3. ARCHIVOS DEL SISTEMA OPERATIVO
+# ==========================================
+.DS_Store
+Thumbs.db
+
+# ==========================================
+# 4. DEPENDENCIAS Y CACHÉ (Ajusta según tu tecnología)
+# ==========================================
+# Si usas Python:
+__pycache__/
+*.py[cod]
+venv/
+env/
+.venv/
+
+# Si usas Node.js / Frontend Web:
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# Si es Flutter/Dart (por si acaso):
+.dart_tool/
+build/
+.pub-cache/
+
+
+# ==========================================
+# Carpetas de compilación (Ejecutables .exe y .pkg)
+# ==========================================
+build/
+dist/
+*.spec
+
+# ==========================================
+# Caché de Python
+# ==========================================
+__pycache__/
+*.pyc
